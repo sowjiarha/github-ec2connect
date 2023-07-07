@@ -6,7 +6,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Create a file
-        uses: appleboy/ssh-action@master
+        uses: appleboy/ssh-action@main
         with:
           host: 13.126.79.22
           username: ec2-user

@@ -12,7 +12,7 @@ jobs:
           username: ec2-user
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
-            echo hello world > hello.txt
+            echo hello wold > hello.txt
             git init
             git clone https://github.com/sowjiarha/github-ec2connect.git
             git pull origin main

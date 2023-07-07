@@ -11,4 +11,10 @@ jobs:
           host: 13.126.79.22
           username: ec2-user
           key: ${{ secrets.PRIVATE_KEY }}
-          script: echo hello world > hello.txt
+          script: |
+            echo hello world > hello.txt
+            git init
+            git clone https://github.com/sowjiarha/github-ec2connect.git
+            git pull origin main
+            cd /srv
+            pwd

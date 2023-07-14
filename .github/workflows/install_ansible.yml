@@ -5,11 +5,15 @@ jobs:
     name: Install Ansible
     runs-on: ubuntu-latest
     steps:
-      - name: Create a file
+      - name: Install ansible
         uses: appleboy/ssh-action@master
         with:
-          host: 3.110.166.178
+          host: 3.110.166.178  
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
             sudo apt-get update
+            sudo apt install software-properties-common
+            sudo add-apt-repository --yes --update ppa:ansible/ansible
+            sudo apt install ansible
+            ansible --version

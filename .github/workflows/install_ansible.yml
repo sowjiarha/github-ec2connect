@@ -18,3 +18,4 @@ jobs:
             sudo add-apt-repository --yes --update ppa:ansible/ansible -y
             sudo apt install ansible -y
             ansible --version -y
+            ssh-copy-id ubuntu@13.127.1.115

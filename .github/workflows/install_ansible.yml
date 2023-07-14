@@ -1,4 +1,4 @@
-name: Access server
+name: Install Ansible
 on: push
 jobs:
   access_server:

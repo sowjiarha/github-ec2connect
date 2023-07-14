@@ -12,4 +12,6 @@ jobs:
           username: ubuntu
           key: ${{ secrets.PRIVATE_KEY }}
           script: |
-            
+            sudo apt-add-repository ppa:ansible/ansible
+            sudo apt update 
+            sudo apt install ansible
